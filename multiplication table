@@ -33,9 +33,9 @@ Sub TabliczkaMnozenia()
         For licznik2 = 1 To 10
             ActiveCell = licznik1 * licznik2
             ActiveCell.Offset(0, 1).Select
-            Next licznik2
+        Next licznik2
         ActiveCell.Offset(1, -10).Select
-        Next licznik1
+    Next licznik1
     
     
     Range("A1:K11").Select
