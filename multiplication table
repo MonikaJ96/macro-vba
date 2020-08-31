@@ -21,12 +21,17 @@ Sub TabliczkaMnozenia()
     Range("B1").Select
     Range(Selection, Selection.End(xlToRight)).Select
     Selection.Font.Bold = True
-    Selection.Interior.Color = rgbLightGreen
+    Selection.Interior.Color = rgbGreen
+    Selection.Font.Color = rgbWhite
+    Selection.Font.Size = 10
     
     Range("A2").Select
     Range(Selection, Selection.End(xlDown)).Select
     Selection.Font.Bold = True
-    Selection.Interior.Color = rgbLightGreen
+    Selection.Interior.Color = rgbGreen
+    Selection.Font.Color = rgbWhite
+    Selection.Font.Size = 10
+    
     
     Range("B2").Select
     For licznik1 = 1 To 10
@@ -39,6 +44,7 @@ Sub TabliczkaMnozenia()
     
     
     Range("A1:K11").Select
+    Selection.Font.Size = 10
     Selection.Borders(xlDiagonalDown).LineStyle = xlNone
     Selection.Borders(xlDiagonalUp).LineStyle = xlNone
     With Selection.Borders(xlEdgeLeft)
