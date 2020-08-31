@@ -18,15 +18,13 @@ Sub TabliczkaMnozenia()
         ActiveCell.Offset(1, 0).Select
     Next naglowek
     
-    Range("B1").Select
-    Range(Selection, Selection.End(xlToRight)).Select
+    Range("B1", Range("B1").End(xlToRight)).Select
     Selection.Font.Bold = True
     Selection.Interior.Color = rgbGreen
     Selection.Font.Color = rgbWhite
     Selection.Font.Size = 10
     
-    Range("A2").Select
-    Range(Selection, Selection.End(xlDown)).Select
+    Range("A2", Range("A2").End(xlDown)).Select
     Selection.Font.Bold = True
     Selection.Interior.Color = rgbGreen
     Selection.Font.Color = rgbWhite
@@ -55,4 +53,3 @@ Sub TabliczkaMnozenia()
 
 
 End Sub
-
